@@ -1,5 +1,5 @@
 def arithmetic_arranger(problems, answer=False):
-    # Check the number of problems
+
     if len(problems) > 5:
         return "Error: Too many problems."
     
@@ -17,7 +17,6 @@ def arithmetic_arranger(problems, answer=False):
     if "*" in operator or "/" in operator:
         return "Error: Operator must be '+' or '-'."
 
-    # Check the digits
     for i in range(len(first_operand)):
         if not (first_operand[i].isdigit() and second_operand[i].isdigit()):
             return "Error: Numbers must only contain digits."
